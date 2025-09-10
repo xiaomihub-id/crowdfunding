@@ -1,4 +1,7 @@
-# 📝 Donation Recap - POCO X7 Pro Crowdfunding
+# XFI | Xiaomi Federation Indonesia
+
+## 📝 Donation Recap - POCO X7 Pro Crowdfunding
+---
 
 | No | Tanggal     | Nama            | Nominal    | Platform |
 |----|-------------|-----------------|------------|----------|
@@ -26,4 +29,4 @@
 📢 **Daily Donation Report Channel:** [t.me/rodinalliance](https://t.me/rodinalliance)
 
 ---
-### XFI | Xiaomi Federation Indonesia
+### XFI
