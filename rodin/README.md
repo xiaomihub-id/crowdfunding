@@ -14,9 +14,10 @@
 **💰 Total Collected:** Rp **450.000**  
 🎯 **Target:** Rp 3.000.000  
 
-### Progress
-![progress](https://progress-bar.dev/450000/?scale=5000000&title=Collected&width=500&color=00cc66)
+### 📊 Progress
+450K / 3.000K (15%)
 
+▓▓▓░░░░░░░░░░░░░░░
 ---
 
 📌 Notes:  
@@ -24,4 +25,5 @@
 
 📢 **Daily Donation Report Channel:** [t.me/rodinalliance](https://t.me/rodinalliance)
 
-## XFI | Xiaomi Federation Indonesia
+---
+### XFI | Xiaomi Federation Indonesia
