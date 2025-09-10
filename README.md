@@ -1,7 +1,7 @@
 # XFI | Xiaomi Federation Indonesia
 
 ## 📝 Donation Recap - POCO X7 Pro Crowdfunding
----
+
 
 | No | Tanggal     | Nama            | Nominal    | Platform |
 |----|-------------|-----------------|------------|----------|
