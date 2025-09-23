@@ -30,6 +30,8 @@
 **Total Collected:** Rp **880.000**
 
 🎯 **Target:** Rp 3.000.000
+
+---
 📊 **Progress:**
 
 ```
