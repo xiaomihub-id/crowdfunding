@@ -29,7 +29,7 @@
 * **Saweria:** Rp 410.000
 * **Ko-fi:** Rp 400.000
 
-**Total Collected:** Rp **1.000.000**
+**Total Collected:** Rp **1.160.000**
 
 🎯 **Target:** Rp 3.000.000
 
