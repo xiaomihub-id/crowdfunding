@@ -48,6 +48,12 @@ Let’s squad up, keep the devs on track, and make this project shine 🚀
 | 37 | @akuorangbaikkok | Rp 20.000 | Saweria |
 | 38 | @Nazephyrus | Rp 15.000 | DANA |
 | 39 | @Fethmus_Mioma | Rp 20.000 | Saweria |
+| 40 | @thearz30 | Rp 20.000 | DANA |
+| 41 | @rifqikim | Rp 20.000 | DANA |
+| 42 | @FredyNJ | Rp 80.000 | PayPal |
+| 43 | @Alamakjang7762 | Rp 10.000 | Saweria |
+| 44 | @Bobbyone | Rp 350.000 | PayPal |
+
 
 ---
 
@@ -55,18 +61,21 @@ Let’s squad up, keep the devs on track, and make this project shine 🚀
 
 | Platform | Total |
 |-----------|--------|
-| 🟣 **DANA** | Rp **585.000** |
-| 🟢 **Saweria** | Rp **1.035.000** |
-| 🔵 **Ko-fi** | Rp **480.000** |
-| 💲 **PayPal** | Rp **745.000** |
+| 🟣 **DANA** | Rp **845.000** |
+| 🟢 **Saweria** | Rp **1.045.000** |
+| 🔵 **Ko-fi** | Rp **560.000** |
+| 💲 **PayPal** | Rp **1.095.000** |
 | 🟠 **Sociabuzz** | Rp **110.000** |
 
-**🧾 Total Collected:** **Rp 2.955.000 / Rp 3.000.000**
+
+### 🧾 **Total Keseluruhan:** Rp **3.655.000**
+
 
 ---
 
 ## 📊 **Progress:**
-[███████████████████████░] 98%
+[████████████████████████] 112%
+🎉 Target achieved!
 
 ---
 
