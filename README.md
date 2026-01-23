@@ -2,8 +2,8 @@
 
 Project ini merupakan inisiatif komunitas **Xiaomi Federation Indonesia (XFI)** untuk mencatat dan mendokumentasikan aktivitas **crowdfunding** yang telah dilakukan oleh komunitas.
 
-📌 Pencatatan crowdfunding **mulai dilakukan dan diarsipkan secara terbuka di GitHub sejak tahun 2025**.  
-Data crowdfunding sebelum periode tersebut kemungkinan **belum terdokumentasi secara lengkap**.
+📌 *Pencatatan crowdfunding mulai dilakukan dan diarsipkan secara terbuka di GitHub sejak tahun 2025.*  
+*Data crowdfunding sebelum periode tersebut kemungkinan belum terdokumentasi secara lengkap.*
 
 Repository ini dibuat sebagai bentuk **transparansi, akuntabilitas, serta arsip jangka panjang** bagi seluruh anggota komunitas.
 
@@ -11,7 +11,7 @@ Repository ini dibuat sebagai bentuk **transparansi, akuntabilitas, serta arsip 
 
 ## 📱 Daftar Crowdfunding
 
-Untuk crowdfunding yang berkaitan dengan device tertentu, silakan lihat dokumentasi pada masing-masing device:
+Detail crowdfunding untuk masing-masing device dapat dilihat pada dokumentasi berikut:
 
 - **Poco X7 Pro** (codename: `rodin`) → lihat detail di [`rodin.md`](./rodin.md)
 
