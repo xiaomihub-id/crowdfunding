@@ -8,6 +8,7 @@ Let’s squad up, keep development moving forward, and make this project shine �
 ## 💜 Latest Donations
 
 ### 🟣 DANA
+
 | Supporter | Amount |
 |----------|--------|
 | @sleepingboys15 | 50k |
@@ -27,6 +28,7 @@ Let’s squad up, keep development moving forward, and make this project shine �
 ---
 
 ### 🟢 Saweria
+
 | Supporter | Amount |
 |----------|--------|
 | @Claussell21 | 50k |
@@ -55,6 +57,7 @@ Let’s squad up, keep development moving forward, and make this project shine �
 ---
 
 ### 🔵 Ko-fi
+
 | Supporter | Amount (USD) | Converted |
 |----------|---------------|-----------|
 | @JOEDMOBE13 | $5 | 80k |
@@ -67,6 +70,7 @@ Let’s squad up, keep development moving forward, and make this project shine �
 ---
 
 ### 💲 PayPal
+
 | Supporter | Amount (USD) | Converted |
 |----------|---------------|-----------|
 | @Bobbyone | $25 | 415k |
@@ -80,6 +84,7 @@ Let’s squad up, keep development moving forward, and make this project shine �
 ---
 
 ### 🟠 Sociabuzz
+
 | Supporter | Amount |
 |----------|--------|
 | @nesszyy | 110k (281.93 TL) |
@@ -88,6 +93,7 @@ Let’s squad up, keep development moving forward, and make this project shine �
 ---
 
 ## 🧩 Summary
+
 | Platform | Total |
 |---------|-------|
 | 🟣 **DANA** | Rp **705,000** |
