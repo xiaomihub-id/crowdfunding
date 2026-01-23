@@ -13,7 +13,7 @@ Repository ini dibuat sebagai bentuk **transparansi, akuntabilitas, serta arsip 
 
 Detail crowdfunding untuk masing-masing device dapat dilihat pada dokumentasi berikut:
 
-- **Poco X7 Pro** (codename: `rodin`) → lihat detail di [`rodin.md`](./rodin.md)
+- **Poco X7 Pro** (codename: `rodin`) → lihat detail di [Rodin crowdfunding](./rodin/)
 
 ---
 
