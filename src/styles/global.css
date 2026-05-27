@@ -62,3 +62,33 @@ a {
 body.menu-open {
   overflow: hidden;
 }
+
+.mobile-menu {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-0.25rem);
+  transition:
+    max-height 200ms ease,
+    opacity 160ms ease,
+    transform 200ms ease;
+}
+
+.mobile-menu[data-open="true"] {
+  max-height: min(80vh, 34rem);
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.menu-icon-close {
+  display: none;
+}
+
+[data-menu-button][aria-expanded="true"] .menu-icon-open {
+  display: none;
+}
+
+[data-menu-button][aria-expanded="true"] .menu-icon-close {
+  display: block;
+}
