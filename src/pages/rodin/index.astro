@@ -13,9 +13,9 @@ const formatter = new Intl.NumberFormat("id-ID", {
 ---
 
 <BaseLayout title="Rodin Campaign Archive | XiaomiHub XFI">
-  <section class="container-shell py-14">
+  <section class="container-shell py-12 sm:py-14 lg:py-16">
     <p class="text-sm font-semibold uppercase tracking-[0.18em] text-xiaomi">Permanent Archive</p>
-    <h1 class="mt-4 text-4xl font-bold text-zinc-950 sm:text-5xl">POCO X7 Pro Crowdfunding - Rodin Alliance</h1>
+    <h1 class="mt-4 text-[clamp(2.25rem,7vw,3.25rem)] font-bold leading-tight text-zinc-950">POCO X7 Pro Crowdfunding - Rodin Alliance</h1>
     <p class="mt-4 max-w-3xl text-zinc-600">
       The original Rodin crowdfunding history is preserved here as a completed public transparency record.
     </p>
@@ -69,9 +69,9 @@ const formatter = new Intl.NumberFormat("id-ID", {
 
         <section class="panel rounded-xl p-5">
           <h2 class="text-2xl font-semibold text-zinc-950">Contribution summary</h2>
-          <div class="mt-5 grid gap-3 sm:grid-cols-2">
+          <div class="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
             {campaign.contributionChannels.map((channel) => (
-              <div class="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
+              <div class="min-w-0 rounded-xl border border-zinc-200 bg-zinc-50 p-4">
                 <p class="font-semibold text-zinc-950">{channel.name}</p>
                 <p class="mt-1 text-sm text-xiaomi">{formatter.format(channel.amount)}</p>
                 {channel.foreignTotal && <p class="mt-1 text-xs text-zinc-500">{channel.foreignTotal}</p>}

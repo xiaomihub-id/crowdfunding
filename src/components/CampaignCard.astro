@@ -25,16 +25,16 @@ const compactCurrency = (value) => {
 
 <article
   class:list={[
-    "panel rounded-xl p-5 transition hover:-translate-y-0.5 hover:border-zinc-300",
+    "panel min-w-0 rounded-xl p-5 transition hover:-translate-y-0.5 hover:border-zinc-300",
     featured ? "lg:p-7" : "",
   ]}
 >
   <div class="flex flex-wrap items-start justify-between gap-3">
-    <div>
+    <div class="min-w-0">
       <p class="text-xs font-semibold uppercase tracking-[0.18em] text-xiaomi">
         {campaign.completed ? "Completed Campaign" : "Active Campaign"}
       </p>
-      <h3 class="mt-2 text-xl font-semibold text-zinc-950">{campaign.title}</h3>
+      <h3 class="mt-2 text-lg font-semibold leading-snug text-zinc-950 sm:text-xl">{campaign.title}</h3>
       <p class="mt-1 text-sm text-zinc-500">
         {campaign.device} / <span class="font-mono">{campaign.codename}</span>
       </p>
@@ -79,7 +79,7 @@ const compactCurrency = (value) => {
     </div>
   </div>
 
-  <div class="mt-6 flex flex-wrap gap-3">
+  <div class="mt-6 grid gap-3 sm:flex sm:flex-wrap">
     <ButtonLink href={`${basePath}campaigns/${campaign.codename}/`}>View Campaign</ButtonLink>
     <ButtonLink href={`${basePath}rodin/`} variant="secondary">Archive</ButtonLink>
   </div>
