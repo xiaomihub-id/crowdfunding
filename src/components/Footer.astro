@@ -1,7 +1,7 @@
 ---
 import site from "../data/site.json";
 import XfiLogo from "./XfiLogo.astro";
-const base = import.meta.env.BASE_URL;
+import { basePath } from "../utils/paths";
 ---
 
 <footer class="border-t border-white/10 py-10">
@@ -14,8 +14,8 @@ const base = import.meta.env.BASE_URL;
       </div>
     </div>
     <nav class="flex flex-wrap gap-4 text-sm text-zinc-400">
-      <a class="hover:text-white" href={`${base}campaigns/`}>Campaigns</a>
-      <a class="hover:text-white" href={`${base}updates/`}>Updates</a>
+      <a class="hover:text-white" href={`${basePath}campaigns/`}>Campaigns</a>
+      <a class="hover:text-white" href={`${basePath}updates/`}>Updates</a>
       <a class="hover:text-white" href={site.githubUrl} target="_blank" rel="noreferrer">GitHub</a>
       <a class="hover:text-white" href={site.telegramUrl} target="_blank" rel="noreferrer">Telegram</a>
     </nav>

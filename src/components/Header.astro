@@ -1,18 +1,18 @@
 ---
 import site from "../data/site.json";
 import XfiLogo from "./XfiLogo.astro";
-const base = import.meta.env.BASE_URL;
+import { basePath } from "../utils/paths";
 const nav = [
-  ["Home", `${base}`],
-  ["Campaigns", `${base}campaigns/`],
-  ["Updates", `${base}updates/`],
-  ["About", `${base}about/`],
+  ["Home", basePath],
+  ["Campaigns", `${basePath}campaigns/`],
+  ["Updates", `${basePath}updates/`],
+  ["About", `${basePath}about/`],
 ];
 ---
 
 <header class="sticky top-0 z-30 border-b border-white/10 bg-ink/86 backdrop-blur">
   <div class="container-shell flex min-h-16 items-center justify-between gap-4">
-    <a href={base} class="focus-ring flex items-center gap-3 rounded-md text-sm font-semibold text-white">
+    <a href={basePath} class="focus-ring flex items-center gap-3 rounded-md text-sm font-semibold text-white">
       <XfiLogo variant="primary" class="h-8 w-[55px]" alt="XFI" />
       <span class="hidden sm:inline">{site.name}</span>
     </a>
@@ -24,7 +24,7 @@ const nav = [
       <a class="focus-ring rounded-md text-xiaomi hover:text-orange-300" href={site.telegramUrl} target="_blank" rel="noreferrer">Telegram</a>
     </nav>
     <div class="flex gap-3 md:hidden">
-      <a class="focus-ring rounded-md text-sm text-zinc-300" href={`${base}campaigns/`}>Campaigns</a>
+      <a class="focus-ring rounded-md text-sm text-zinc-300" href={`${basePath}campaigns/`}>Campaigns</a>
       <a class="focus-ring rounded-md text-sm text-xiaomi" href={site.telegramUrl} target="_blank" rel="noreferrer">Telegram</a>
     </div>
   </div>

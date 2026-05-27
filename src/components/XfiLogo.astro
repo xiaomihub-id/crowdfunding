@@ -1,11 +1,12 @@
 ---
+import { basePath } from "../utils/paths";
+
 const {
   variant = "primary",
   class: className = "",
   alt = "Xiaomi Federation Indonesia",
 } = Astro.props;
 
-const base = import.meta.env.BASE_URL;
 const logos = {
   primary: "brand/XFI_logo.svg",
   white: "brand/XFI_logo_white.svg",
@@ -14,7 +15,7 @@ const logos = {
 ---
 
 <img
-  src={`${base}${logos[variant]}`}
+  src={`${basePath}${logos[variant]}`}
   alt={alt}
   class:list={["block h-auto object-contain", className]}
   loading="eager"

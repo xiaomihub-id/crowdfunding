@@ -1,8 +1,8 @@
 ---
 import ButtonLink from "./ButtonLink.astro";
+import { basePath } from "../utils/paths";
 
 const { campaign, featured = false } = Astro.props;
-const base = import.meta.env.BASE_URL;
 const progress = Math.min(Math.round((campaign.raised / campaign.target) * 1000) / 10, 140);
 const displayProgress = Math.round((campaign.raised / campaign.target) * 1000) / 10;
 const formatter = new Intl.NumberFormat("id-ID", {
@@ -65,7 +65,7 @@ const formatter = new Intl.NumberFormat("id-ID", {
   </div>
 
   <div class="mt-6 flex flex-wrap gap-3">
-    <ButtonLink href={`${base}campaigns/${campaign.codename}/`}>View Campaign</ButtonLink>
-    <ButtonLink href={`${base}rodin/`} variant="secondary">Archive</ButtonLink>
+    <ButtonLink href={`${basePath}campaigns/${campaign.codename}/`}>View Campaign</ButtonLink>
+    <ButtonLink href={`${basePath}rodin/`} variant="secondary">Archive</ButtonLink>
   </div>
 </article>

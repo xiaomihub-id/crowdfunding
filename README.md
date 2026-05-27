@@ -66,5 +66,17 @@ npm run build
 
 The site is built with Astro and Tailwind CSS for GitHub Pages compatible static output.
 
+## Deployment
+
+GitHub Pages must use **GitHub Actions** as the source, not "Deploy from branch".
+
+The deployment workflow is:
+
+```text
+.github/workflows/deploy.yml
+```
+
+Astro builds to `dist/`, and `public/.nojekyll` is included so GitHub Pages does not process the output with Jekyll.
+
 **XiaomiHub | XFI**  
 _Community-driven, transparent, and accountable._
