@@ -1,0 +1,71 @@
+---
+import ButtonLink from "./ButtonLink.astro";
+
+const { campaign, featured = false } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const progress = Math.min(Math.round((campaign.raised / campaign.target) * 1000) / 10, 140);
+const displayProgress = Math.round((campaign.raised / campaign.target) * 1000) / 10;
+const formatter = new Intl.NumberFormat("id-ID", {
+  style: "currency",
+  currency: "IDR",
+  maximumFractionDigits: 0,
+});
+---
+
+<article
+  class:list={[
+    "panel rounded-lg p-5 transition hover:border-xiaomi/50",
+    featured ? "lg:p-7" : "",
+  ]}
+>
+  <div class="flex flex-wrap items-start justify-between gap-3">
+    <div>
+      <p class="text-xs font-semibold uppercase tracking-[0.18em] text-xiaomi">
+        {campaign.completed ? "Completed Campaign" : "Active Campaign"}
+      </p>
+      <h3 class="mt-2 text-xl font-semibold text-white">{campaign.title}</h3>
+      <p class="mt-1 text-sm text-zinc-400">
+        {campaign.device} / <span class="font-mono">{campaign.codename}</span>
+      </p>
+    </div>
+    <span class="rounded-full border border-xiaomi/40 bg-xiaomi/10 px-3 py-1 text-xs font-semibold text-orange-200">
+      {campaign.status}
+    </span>
+  </div>
+
+  <p class="mt-4 text-sm leading-6 text-zinc-300">{campaign.description}</p>
+
+  <div class="mt-5 grid gap-3 sm:grid-cols-3">
+    <div class="rounded-lg bg-white/[0.04] p-4">
+      <p class="text-xs text-zinc-500">Raised</p>
+      <p class="mt-1 text-lg font-semibold text-white">{formatter.format(campaign.raised)}</p>
+    </div>
+    <div class="rounded-lg bg-white/[0.04] p-4">
+      <p class="text-xs text-zinc-500">Target</p>
+      <p class="mt-1 text-lg font-semibold text-white">{formatter.format(campaign.target)}</p>
+    </div>
+    <div class="rounded-lg bg-white/[0.04] p-4">
+      <p class="text-xs text-zinc-500">Supporters</p>
+      <p class="mt-1 text-lg font-semibold text-white">{campaign.supporters}</p>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <div class="mb-2 flex items-center justify-between text-sm">
+      <span class="text-zinc-400">Progress</span>
+      <span class="font-semibold text-white">{displayProgress}%</span>
+    </div>
+    <div class="h-2 overflow-hidden rounded-full bg-white/10">
+      <div
+        class="h-full rounded-full bg-xiaomi"
+        style={`width: ${Math.min(progress, 100)}%`}
+      >
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-6 flex flex-wrap gap-3">
+    <ButtonLink href={`${base}campaigns/${campaign.codename}/`}>View Campaign</ButtonLink>
+    <ButtonLink href={`${base}rodin/`} variant="secondary">Archive</ButtonLink>
+  </div>
+</article>

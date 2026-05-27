@@ -1,0 +1,132 @@
+[
+  {
+    "title": "POCO X7 Pro Crowdfunding - Rodin Alliance",
+    "codename": "rodin",
+    "device": "POCO X7 Pro",
+    "maintainer": "@rthedream",
+    "target": 3700000,
+    "raised": 3835000,
+    "raisedApproxUsd": 222,
+    "supporters": 45,
+    "status": "Successfully Funded",
+    "startDate": null,
+    "endDate": null,
+    "description": "A community-powered initiative to support AOSP development for POCO X7 Pro. XFI helped facilitate the public crowdfunding archive while community contributions were allocated to the maintainer and development purpose.",
+    "purpose": "Support AOSP development for POCO X7 Pro and help the community enjoy a clean, open Android experience.",
+    "archiveNote": "This campaign was publicly logged and updated regularly as a transparency archive. The crowdfunding process is officially completed according to its original purpose.",
+    "acknowledgement": "A huge thank you to all supporters and community members who contributed to Rodin Alliance.",
+    "completed": true,
+    "featured": true,
+    "links": [
+      {
+        "label": "Telegram Channel",
+        "url": "https://t.me/rodinalliance"
+      },
+      {
+        "label": "Ko-fi",
+        "url": "https://ko-fi.com/xyzuniverse"
+      },
+      {
+        "label": "Saweria",
+        "url": "https://saweria.co/xyzuniverse"
+      }
+    ],
+    "contributionChannels": [
+      {
+        "name": "DANA",
+        "amount": 705000,
+        "entries": [
+          "@sleepingboys15 - 50k",
+          "@Tutup_oli - 150k",
+          "@sleepingboys15 - 50k",
+          "@andiko408 - 50k",
+          "@Mnskkyy - 50k",
+          "@ZTV86 - 100k",
+          "@Quinntin - 100k",
+          "@Tutup_oli - 50k",
+          "@Mnskkyy - 50k",
+          "@Nazephyrus - 15k",
+          "@thearz30 - 20k",
+          "@rifqikim - 20k"
+        ]
+      },
+      {
+        "name": "Saweria",
+        "amount": 1045000,
+        "entries": [
+          "@Claussell21 - 50k",
+          "@ZTV86 - 100k",
+          "@Katajaree - 100k",
+          "@Vendora2 - 40k",
+          "@rifqikim - 10k",
+          "@chisa_husband - 20k",
+          "@ethfactory - 50k",
+          "@andiko408 - 40k",
+          "@chisa_husband - 10k",
+          "@bisadiemgakau - 40k",
+          "@andiko408 - 130k",
+          "@inizeydann - 10k",
+          "@gigs689 - 100k",
+          "Pencinta Succbus - 15k",
+          "@Alamakjang7762 - 10k",
+          "@inizeydann - 10k",
+          "@andiko408 - 60k",
+          "@aerenire - 50k",
+          "@akuorangbaikkok - 20k",
+          "@Fethmus_Mioma - 20k",
+          "@Alamakjang7762 - 10k"
+        ]
+      },
+      {
+        "name": "Ko-fi",
+        "amount": 560000,
+        "foreignTotal": "$35",
+        "entries": [
+          "@JOEDMOBE13 - $5 (approx. 80k)",
+          "@MrZ3T4 - $5 (approx. 80k)",
+          "8036718184 - $5 (approx. 80k)",
+          "Dino Georgio - $10 (approx. 160k)",
+          "Enan Vigo - $10 (approx. 160k)"
+        ]
+      },
+      {
+        "name": "PayPal",
+        "amount": 1415000,
+        "foreignTotal": "$88.35",
+        "entries": [
+          "@Bobbyone - $25 (approx. 415k)",
+          "@holymee - $5 (approx. 80k)",
+          "@FredyNJ - $5 (approx. 80k)",
+          "@Bobbyone - $22.35 (approx. 350k)",
+          "@Max_the_blue_German_Cat - $11 (approx. 170k)",
+          "@Max_the_blue_German_Cat - $20 (approx. 320k)"
+        ]
+      },
+      {
+        "name": "Sociabuzz",
+        "amount": 110000,
+        "foreignTotal": "281.93 TL",
+        "entries": [
+          "@nesszyy - 110k (281.93 TL)"
+        ]
+      }
+    ],
+    "updates": [
+      {
+        "title": "Crowdfunding completed",
+        "date": null,
+        "summary": "The POCO X7 Pro (rodin) crowdfunding campaign is closed. The collected contributions were fully returned to the developer, used to purchase a POCO X7 Pro device, and the device is actively being used for AOSP development."
+      },
+      {
+        "title": "Goal exceeded",
+        "date": null,
+        "summary": "The campaign raised Rp 3,835,000 against a Rp 3,700,000 goal, reaching 103.6% of the target."
+      },
+      {
+        "title": "Public contribution archive maintained",
+        "date": null,
+        "summary": "Contribution records across DANA, Saweria, Ko-fi, PayPal, and Sociabuzz are preserved as a permanent public transparency archive."
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+---
+const {
+  href,
+  variant = "primary",
+  target,
+  rel,
+} = Astro.props;
+
+const baseClasses =
+  "focus-ring inline-flex min-h-11 items-center justify-center rounded-lg px-4 py-2 text-sm font-semibold transition";
+const variants = {
+  primary: "bg-xiaomi text-white shadow-orange hover:bg-[#ff7d1f]",
+  secondary:
+    "border border-white/12 bg-white/[0.04] text-white hover:border-xiaomi/70 hover:text-white",
+  ghost: "text-zinc-300 hover:text-white",
+};
+---
+
+<a
+  href={href}
+  class:list={[baseClasses, variants[variant]]}
+  target={target}
+  rel={rel}
+>
+  <slot />
+</a>

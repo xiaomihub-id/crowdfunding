@@ -1,0 +1,22 @@
+---
+const {
+  variant = "primary",
+  class: className = "",
+  alt = "Xiaomi Federation Indonesia",
+} = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+const logos = {
+  primary: "brand/XFI_logo.svg",
+  white: "brand/XFI_logo_white.svg",
+  main: "brand/XFI_mainlogo.svg",
+};
+---
+
+<img
+  src={`${base}${logos[variant]}`}
+  alt={alt}
+  class:list={["block h-auto object-contain", className]}
+  loading="eager"
+  decoding="async"
+/>

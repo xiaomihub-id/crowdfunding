@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-xiaomi: #ff6900;
+  --color-ink: #0f0f10;
+  --color-panel: #18181b;
+  --font-sans: Inter, Geist, ui-sans-serif, system-ui, sans-serif;
+  --shadow-soft: 0 16px 40px rgba(0, 0, 0, 0.28);
+  --shadow-orange: 0 0 24px rgba(255, 105, 0, 0.18);
+}
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, Geist, ui-sans-serif, system-ui, sans-serif;
+  background: #0f0f10;
+  color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(255, 105, 0, 0.12), transparent 34rem),
+    linear-gradient(180deg, #0f0f10 0%, #18181b 52%, #0f0f10 100%);
+  color: #f8fafc;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(255, 105, 0, 0.35);
+}
+
+.container-shell {
+  width: min(1120px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.panel {
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(24, 24, 27, 0.78);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(14px);
+}
+
+.focus-ring {
+  outline: 2px solid transparent;
+  outline-offset: 3px;
+}
+
+.focus-ring:focus-visible {
+  outline-color: #ff6900;
+}

@@ -1,0 +1,23 @@
+---
+import site from "../data/site.json";
+import XfiLogo from "./XfiLogo.astro";
+const base = import.meta.env.BASE_URL;
+---
+
+<footer class="border-t border-white/10 py-10">
+  <div class="container-shell flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+    <div class="flex items-center gap-4">
+      <XfiLogo variant="white" class="h-9 w-[62px] opacity-90" alt="XFI" />
+      <div>
+      <p class="font-semibold text-white">{site.name}</p>
+      <p class="mt-1 text-sm text-zinc-400">{site.tagline}</p>
+      </div>
+    </div>
+    <nav class="flex flex-wrap gap-4 text-sm text-zinc-400">
+      <a class="hover:text-white" href={`${base}campaigns/`}>Campaigns</a>
+      <a class="hover:text-white" href={`${base}updates/`}>Updates</a>
+      <a class="hover:text-white" href={site.githubUrl} target="_blank" rel="noreferrer">GitHub</a>
+      <a class="hover:text-white" href={site.telegramUrl} target="_blank" rel="noreferrer">Telegram</a>
+    </nav>
+  </div>
+</footer>
