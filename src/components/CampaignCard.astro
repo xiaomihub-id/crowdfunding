@@ -10,6 +10,17 @@ const formatter = new Intl.NumberFormat("id-ID", {
   currency: "IDR",
   maximumFractionDigits: 0,
 });
+const compactCurrency = (value) => {
+  if (value >= 1000000) {
+    return `Rp ${(value / 1000000).toFixed(1).replace(".", ",")} jt`;
+  }
+
+  if (value >= 1000) {
+    return `Rp ${(value / 1000).toFixed(0)} rb`;
+  }
+
+  return formatter.format(value);
+};
 ---
 
 <article
@@ -35,18 +46,22 @@ const formatter = new Intl.NumberFormat("id-ID", {
 
   <p class="mt-4 text-sm leading-6 text-zinc-600">{campaign.description}</p>
 
-  <div class="mt-5 grid gap-3 sm:grid-cols-3">
-    <div class="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
+  <div class="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="min-w-0 rounded-xl border border-zinc-200 bg-zinc-50 p-4">
       <p class="text-xs text-zinc-500">Raised</p>
-      <p class="mt-1 text-lg font-semibold text-zinc-950">{formatter.format(campaign.raised)}</p>
+      <p class="mt-1 text-base font-semibold leading-snug text-zinc-950 sm:text-lg" title={formatter.format(campaign.raised)}>
+        {compactCurrency(campaign.raised)}
+      </p>
     </div>
-    <div class="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
+    <div class="min-w-0 rounded-xl border border-zinc-200 bg-zinc-50 p-4">
       <p class="text-xs text-zinc-500">Target</p>
-      <p class="mt-1 text-lg font-semibold text-zinc-950">{formatter.format(campaign.target)}</p>
+      <p class="mt-1 text-base font-semibold leading-snug text-zinc-950 sm:text-lg" title={formatter.format(campaign.target)}>
+        {compactCurrency(campaign.target)}
+      </p>
     </div>
-    <div class="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
+    <div class="min-w-0 rounded-xl border border-zinc-200 bg-zinc-50 p-4">
       <p class="text-xs text-zinc-500">Supporters</p>
-      <p class="mt-1 text-lg font-semibold text-zinc-950">{campaign.supporters}</p>
+      <p class="mt-1 text-base font-semibold leading-snug text-zinc-950 sm:text-lg">{campaign.supporters}</p>
     </div>
   </div>
 
