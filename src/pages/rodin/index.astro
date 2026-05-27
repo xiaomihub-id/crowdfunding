@@ -15,34 +15,34 @@ const formatter = new Intl.NumberFormat("id-ID", {
 <BaseLayout title="Rodin Campaign Archive | XiaomiHub XFI">
   <section class="container-shell py-14">
     <p class="text-sm font-semibold uppercase tracking-[0.18em] text-xiaomi">Permanent Archive</p>
-    <h1 class="mt-4 text-4xl font-bold text-white sm:text-5xl">POCO X7 Pro Crowdfunding - Rodin Alliance</h1>
-    <p class="mt-4 max-w-3xl text-zinc-300">
+    <h1 class="mt-4 text-4xl font-bold text-zinc-950 sm:text-5xl">POCO X7 Pro Crowdfunding - Rodin Alliance</h1>
+    <p class="mt-4 max-w-3xl text-zinc-600">
       The original Rodin crowdfunding history is preserved here as a completed public transparency record.
     </p>
 
     <div class="mt-8 grid gap-5 lg:grid-cols-[0.8fr_1.2fr]">
-      <aside class="panel rounded-lg p-5 lg:self-start">
+      <aside class="panel rounded-xl p-5 lg:self-start">
         <p class="text-sm font-semibold text-xiaomi">Successfully Funded</p>
         <dl class="mt-4 space-y-4 text-sm">
           <div>
             <dt class="text-zinc-500">Goal</dt>
-            <dd class="mt-1 text-xl font-semibold text-white">{formatter.format(campaign.target)}</dd>
+            <dd class="mt-1 text-xl font-semibold text-zinc-950">{formatter.format(campaign.target)}</dd>
           </div>
           <div>
             <dt class="text-zinc-500">Raised</dt>
-            <dd class="mt-1 text-xl font-semibold text-white">{formatter.format(campaign.raised)}</dd>
+            <dd class="mt-1 text-xl font-semibold text-zinc-950">{formatter.format(campaign.raised)}</dd>
           </div>
           <div>
             <dt class="text-zinc-500">Approx. USD</dt>
-            <dd class="mt-1 text-white">{campaign.raisedApproxUsd} USD</dd>
+            <dd class="mt-1 text-zinc-950">{campaign.raisedApproxUsd} USD</dd>
           </div>
           <div>
             <dt class="text-zinc-500">Result</dt>
-            <dd class="mt-1 text-white">103.6% reached</dd>
+            <dd class="mt-1 text-zinc-950">103.6% reached</dd>
           </div>
           <div>
             <dt class="text-zinc-500">Maintainer</dt>
-            <dd class="mt-1 text-white">{campaign.maintainer}</dd>
+            <dd class="mt-1 text-zinc-950">{campaign.maintainer}</dd>
           </div>
         </dl>
         <div class="mt-6">
@@ -51,9 +51,9 @@ const formatter = new Intl.NumberFormat("id-ID", {
       </aside>
 
       <article class="space-y-5">
-        <section class="panel rounded-lg p-5">
-          <h2 class="text-2xl font-semibold text-white">Closure status</h2>
-          <ul class="mt-4 space-y-2 text-sm text-zinc-300">
+        <section class="panel rounded-xl p-5">
+          <h2 class="text-2xl font-semibold text-zinc-950">Closure status</h2>
+          <ul class="mt-4 space-y-2 text-sm text-zinc-600">
             <li>Collected contributions were fully returned to the developer.</li>
             <li>Contributions were used to purchase a POCO X7 Pro device.</li>
             <li>The device is actively being used for AOSP development.</li>
@@ -61,18 +61,18 @@ const formatter = new Intl.NumberFormat("id-ID", {
           </ul>
         </section>
 
-        <section class="panel rounded-lg p-5">
-          <h2 class="text-2xl font-semibold text-white">Purpose</h2>
-          <p class="mt-4 text-sm leading-6 text-zinc-300">{campaign.purpose}</p>
-          <p class="mt-4 text-sm leading-6 text-zinc-300">{campaign.archiveNote}</p>
+        <section class="panel rounded-xl p-5">
+          <h2 class="text-2xl font-semibold text-zinc-950">Purpose</h2>
+          <p class="mt-4 text-sm leading-6 text-zinc-600">{campaign.purpose}</p>
+          <p class="mt-4 text-sm leading-6 text-zinc-600">{campaign.archiveNote}</p>
         </section>
 
-        <section class="panel rounded-lg p-5">
-          <h2 class="text-2xl font-semibold text-white">Contribution summary</h2>
+        <section class="panel rounded-xl p-5">
+          <h2 class="text-2xl font-semibold text-zinc-950">Contribution summary</h2>
           <div class="mt-5 grid gap-3 sm:grid-cols-2">
             {campaign.contributionChannels.map((channel) => (
-              <div class="rounded-lg bg-white/[0.04] p-4">
-                <p class="font-semibold text-white">{channel.name}</p>
+              <div class="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
+                <p class="font-semibold text-zinc-950">{channel.name}</p>
                 <p class="mt-1 text-sm text-xiaomi">{formatter.format(channel.amount)}</p>
                 {channel.foreignTotal && <p class="mt-1 text-xs text-zinc-500">{channel.foreignTotal}</p>}
               </div>
@@ -80,12 +80,12 @@ const formatter = new Intl.NumberFormat("id-ID", {
           </div>
         </section>
 
-        <section class="panel rounded-lg p-5">
-          <h2 class="text-2xl font-semibold text-white">Original message</h2>
-          <p class="mt-4 text-sm leading-6 text-zinc-300">
+        <section class="panel rounded-xl p-5">
+          <h2 class="text-2xl font-semibold text-zinc-950">Original message</h2>
+          <p class="mt-4 text-sm leading-6 text-zinc-600">
             This crowdfunding supported AOSP development for POCO X7 Pro with public contribution logging and regular updates. The archive remains available as a permanent record for transparency.
           </p>
-          <p class="mt-4 text-sm leading-6 text-zinc-300">
+          <p class="mt-4 text-sm leading-6 text-zinc-600">
             {campaign.acknowledgement}
           </p>
         </section>

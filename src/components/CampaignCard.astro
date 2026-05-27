@@ -14,7 +14,7 @@ const formatter = new Intl.NumberFormat("id-ID", {
 
 <article
   class:list={[
-    "panel rounded-lg p-5 transition hover:border-xiaomi/50",
+    "panel rounded-xl p-5 transition hover:-translate-y-0.5 hover:border-zinc-300",
     featured ? "lg:p-7" : "",
   ]}
 >
@@ -23,39 +23,39 @@ const formatter = new Intl.NumberFormat("id-ID", {
       <p class="text-xs font-semibold uppercase tracking-[0.18em] text-xiaomi">
         {campaign.completed ? "Completed Campaign" : "Active Campaign"}
       </p>
-      <h3 class="mt-2 text-xl font-semibold text-white">{campaign.title}</h3>
-      <p class="mt-1 text-sm text-zinc-400">
+      <h3 class="mt-2 text-xl font-semibold text-zinc-950">{campaign.title}</h3>
+      <p class="mt-1 text-sm text-zinc-500">
         {campaign.device} / <span class="font-mono">{campaign.codename}</span>
       </p>
     </div>
-    <span class="rounded-full border border-xiaomi/40 bg-xiaomi/10 px-3 py-1 text-xs font-semibold text-orange-200">
+    <span class="rounded-full border border-xiaomi/25 bg-orange-50 px-3 py-1 text-xs font-semibold text-xiaomi">
       {campaign.status}
     </span>
   </div>
 
-  <p class="mt-4 text-sm leading-6 text-zinc-300">{campaign.description}</p>
+  <p class="mt-4 text-sm leading-6 text-zinc-600">{campaign.description}</p>
 
   <div class="mt-5 grid gap-3 sm:grid-cols-3">
-    <div class="rounded-lg bg-white/[0.04] p-4">
+    <div class="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
       <p class="text-xs text-zinc-500">Raised</p>
-      <p class="mt-1 text-lg font-semibold text-white">{formatter.format(campaign.raised)}</p>
+      <p class="mt-1 text-lg font-semibold text-zinc-950">{formatter.format(campaign.raised)}</p>
     </div>
-    <div class="rounded-lg bg-white/[0.04] p-4">
+    <div class="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
       <p class="text-xs text-zinc-500">Target</p>
-      <p class="mt-1 text-lg font-semibold text-white">{formatter.format(campaign.target)}</p>
+      <p class="mt-1 text-lg font-semibold text-zinc-950">{formatter.format(campaign.target)}</p>
     </div>
-    <div class="rounded-lg bg-white/[0.04] p-4">
+    <div class="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
       <p class="text-xs text-zinc-500">Supporters</p>
-      <p class="mt-1 text-lg font-semibold text-white">{campaign.supporters}</p>
+      <p class="mt-1 text-lg font-semibold text-zinc-950">{campaign.supporters}</p>
     </div>
   </div>
 
   <div class="mt-5">
     <div class="mb-2 flex items-center justify-between text-sm">
-      <span class="text-zinc-400">Progress</span>
-      <span class="font-semibold text-white">{displayProgress}%</span>
+      <span class="text-zinc-500">Progress</span>
+      <span class="font-semibold text-zinc-950">{displayProgress}%</span>
     </div>
-    <div class="h-2 overflow-hidden rounded-full bg-white/10">
+    <div class="h-2 overflow-hidden rounded-full bg-zinc-100">
       <div
         class="h-full rounded-full bg-xiaomi"
         style={`width: ${Math.min(progress, 100)}%`}

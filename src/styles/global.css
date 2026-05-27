@@ -2,18 +2,17 @@
 
 @theme {
   --color-xiaomi: #ff6900;
-  --color-ink: #0f0f10;
-  --color-panel: #18181b;
+  --color-ink: #18181b;
+  --color-panel: #ffffff;
   --font-sans: Inter, Geist, ui-sans-serif, system-ui, sans-serif;
-  --shadow-soft: 0 16px 40px rgba(0, 0, 0, 0.28);
-  --shadow-orange: 0 0 24px rgba(255, 105, 0, 0.18);
+  --shadow-soft: 0 10px 30px rgba(24, 24, 27, 0.07);
 }
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
   font-family: Inter, Geist, ui-sans-serif, system-ui, sans-serif;
-  background: #0f0f10;
-  color: #ffffff;
+  background: #fafafa;
+  color: #18181b;
 }
 
 * {
@@ -27,10 +26,8 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background:
-    radial-gradient(circle at top left, rgba(255, 105, 0, 0.12), transparent 34rem),
-    linear-gradient(180deg, #0f0f10 0%, #18181b 52%, #0f0f10 100%);
-  color: #f8fafc;
+  background: #fafafa;
+  color: #18181b;
 }
 
 a {
@@ -38,7 +35,7 @@ a {
 }
 
 ::selection {
-  background: rgba(255, 105, 0, 0.35);
+  background: rgba(255, 105, 0, 0.18);
 }
 
 .container-shell {
@@ -47,10 +44,9 @@ a {
 }
 
 .panel {
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  background: rgba(24, 24, 27, 0.78);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(14px);
+  border: 1px solid #e4e4e7;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(24, 24, 27, 0.06);
 }
 
 .focus-ring {

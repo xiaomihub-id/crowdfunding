@@ -53,7 +53,7 @@ public/brand/
 ```
 
 - `XFI_logo.svg` is the primary colored mark for the navbar and hero branding.
-- `XFI_logo_white.svg` is the monochrome mark for the footer and low-emphasis dark surfaces.
+- `XFI_logo_white.svg` is the monochrome mark for occasional inverted or low-emphasis brand surfaces.
 - `XFI_mainlogo.svg` is the full Xiaomi Federation Indonesia logo for About, transparency, and larger official branding sections.
 
 ## Development

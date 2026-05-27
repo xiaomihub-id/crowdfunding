@@ -15,19 +15,19 @@ const featuredCampaign =
 ---
 
 <BaseLayout>
-  <section class="container-shell grid min-h-[calc(100vh-4rem)] gap-10 py-16 md:grid-cols-[1.08fr_0.92fr] md:items-center lg:py-20">
+  <section class="container-shell grid gap-10 py-16 md:grid-cols-[1.08fr_0.92fr] md:items-center lg:py-24">
     <div>
       <XfiLogo variant="main" class="mb-8 hidden h-auto w-[240px] md:block" />
       <XfiLogo variant="primary" class="mb-6 h-auto w-[86px] md:hidden" alt="XFI" />
       <p class="text-sm font-semibold uppercase tracking-[0.22em] text-xiaomi">Community Crowdfunding</p>
-      <h1 class="mt-5 max-w-3xl text-5xl font-extrabold leading-tight text-white sm:text-6xl">
+      <h1 class="mt-5 max-w-3xl text-5xl font-extrabold leading-tight text-zinc-950 sm:text-6xl">
         XiaomiHub | XFI
       </h1>
-      <p class="mt-5 max-w-2xl text-xl font-semibold leading-8 text-zinc-100">
+      <p class="mt-5 max-w-2xl text-xl font-semibold leading-8 text-zinc-800">
         Community Crowdfunding Facilitation<br class="hidden sm:block" />
         for Xiaomi Device Development
       </p>
-      <p class="mt-5 max-w-2xl text-base leading-7 text-zinc-300">
+      <p class="mt-5 max-w-2xl text-base leading-7 text-zinc-600">
         Connecting maintainers and community supporters through transparent, community-first crowdfunding.
       </p>
       <div class="mt-8 flex flex-wrap gap-3">
@@ -36,7 +36,7 @@ const featuredCampaign =
       </div>
     </div>
 
-    <div class="panel rounded-lg p-5">
+    <div class="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
       <p class="text-sm font-semibold text-xiaomi">
         {activeCampaigns.length ? "Featured active campaign" : "No active crowdfunding campaign at the moment."}
       </p>
@@ -46,14 +46,14 @@ const featuredCampaign =
     </div>
   </section>
 
-  <section class="border-y border-white/10 bg-white/[0.03] py-14">
+  <section class="border-y border-zinc-200 bg-white py-14">
     <div class="container-shell grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-start">
       <div>
         <XfiLogo variant="main" class="mb-6 h-auto w-[260px]" />
         <p class="text-sm font-semibold uppercase tracking-[0.18em] text-xiaomi">About XFI</p>
-        <h2 class="mt-3 text-3xl font-semibold text-white">A facilitator for community-backed development</h2>
+        <h2 class="mt-3 text-3xl font-semibold text-zinc-950">A facilitator for community-backed development</h2>
       </div>
-      <div class="space-y-4 text-zinc-300">
+      <div class="space-y-4 text-zinc-600">
         <p>
           XiaomiHub | XFI helps facilitate transparent community crowdfunding to support Xiaomi device development and maintainer ecosystems.
         </p>
@@ -68,18 +68,18 @@ const featuredCampaign =
     <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.18em] text-xiaomi">Featured Campaign</p>
-        <h2 class="mt-3 text-3xl font-semibold text-white">Current community focus</h2>
+        <h2 class="mt-3 text-3xl font-semibold text-zinc-950">Current community focus</h2>
       </div>
       <ButtonLink href="campaigns/" variant="secondary">All Campaigns</ButtonLink>
     </div>
     <CampaignCard campaign={featuredCampaign} featured />
   </section>
 
-  <section class="border-y border-white/10 bg-white/[0.03] py-14">
+  <section class="border-y border-zinc-200 bg-white py-14">
     <div class="container-shell">
       <div class="mb-6">
         <p class="text-sm font-semibold uppercase tracking-[0.18em] text-xiaomi">Latest Updates</p>
-        <h2 class="mt-3 text-3xl font-semibold text-white">Public campaign notes</h2>
+        <h2 class="mt-3 text-3xl font-semibold text-zinc-950">Public campaign notes</h2>
       </div>
       <LatestUpdates />
     </div>
@@ -88,15 +88,15 @@ const featuredCampaign =
   <CommunityLinks />
 
   <section class="container-shell pb-16">
-    <div class="panel rounded-lg p-6 md:p-8">
+    <div class="panel rounded-xl p-6 md:p-8">
       <div class="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
         <div>
           <p class="text-sm font-semibold uppercase tracking-[0.18em] text-xiaomi">Transparency</p>
-          <h2 class="mt-3 text-3xl font-semibold text-white">Facilitation, not profit</h2>
+          <h2 class="mt-3 text-3xl font-semibold text-zinc-950">Facilitation, not profit</h2>
         </div>
         <XfiLogo variant="main" class="h-auto w-[220px] opacity-95" />
       </div>
-      <div class="mt-5 grid gap-4 text-sm leading-6 text-zinc-300 md:grid-cols-3">
+      <div class="mt-5 grid gap-4 text-sm leading-6 text-zinc-600 md:grid-cols-3">
         <p>XFI acts as a bridge between maintainers, developers, device communities, and supporters.</p>
         <p>Campaign contributions are intended for the related maintainer, development team, device source, or community project.</p>
         <p>Community trust is prioritized through visible records, clear campaign context, and preserved historical archives.</p>
